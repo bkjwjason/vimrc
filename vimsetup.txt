@@ -1,0 +1,8 @@
+c++ setup 
+
+download mingw 
+
+download g++ 11.0 version and extract to folder
+
+add vimrc settings
+
