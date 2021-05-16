@@ -13,3 +13,6 @@ autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -std=c++17 -O2 -Wall % -o %:r &
 autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -std=c++14 % -o %:r -Wl,--stack,268435456<CR><CR>
 autocmd filetype cpp nnoremap <F10> :!%:r<CR><CR>
 
+
+# opens up template for cpp
+nnoremap cpp :-1read c:/users/Jason/desktop/vim/template.cpp<CR>
