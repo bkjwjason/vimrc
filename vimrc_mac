@@ -1,0 +1,19 @@
+:cd /Users/jasonbaek/Documents/Coding/CP
+noremap <F9> :w <bar> !g++ -std=c++17 -Wall -O2 % -o %:r && !./%:r  <CR>
+noremap <F10> <ESC> :w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o %< % && ./%< < inp<CR>
+inoremap <F10> <ESC> :w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -DONPC -O2 -o "%<" "%" && "./%<" < inp<CR>
+noremap <F1> :w !python3 <CR>
+nnoremap cpp :-1read /Users/jasonbaek/Documents/template.cpp<CR><CR>
+:set number
+syntax on
+filetype indent on
+set smartindent
+filetype plugin on
+colorscheme zellner
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
